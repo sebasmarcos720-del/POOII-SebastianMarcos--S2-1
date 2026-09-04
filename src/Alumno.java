@@ -41,4 +41,15 @@ public class Alumno extends Persona {
         return codigoAlumno;
     }
 
+    public List<Curso> getListaCursos() {
+        return listaCursos;
+    }
+
+    public void mostrarCursos(){
+        for (Curso curso : listaCursos){
+
+            System.out.println(curso.mostrar());
+        }
+    }
+
 }
